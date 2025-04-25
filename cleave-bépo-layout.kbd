@@ -1,0 +1,41 @@
+;; This defines the BÉPO layout on the Truly Ergonomic CLEAVE keyboard.
+;;
+;; To use this layout, you need to install the BÉPO layout driver on Windows: https://cdn.bepo.fr/windows/1.1rc2/bepo-1.1rc2-full.exe
+;; And you need to use the built-in custom layout using the following key combinations:
+;;   - Factory reset the whole keyboard: Fn + Esc + R until the keyboard blinks
+;;   - Change to the custom layout: Fn + Esc + Q
+;;   - Change the secondary left Ctrl to F24: Fn + Esc + P
+
+(deflocalkeys-win
+  ;; Standard BÉPO layout
+  ;; source: https://kbdlayout.info/kbdfrnb
+  $ 222     dbqt 49   « 50      » 51      lpar 52   rpar 53   @ 54      + 55      - 56      / 57      * 48      = 189     % 187
+            b 66      é 186     p 80      o 79      è 191     ^ 219     v 86      d 68      l 76      j 74      z 90      w 87
+            a 65      u 85      i 73      e 69      , 188     c 67      t 84      s 83      r 82      n 78      m 77      ç 220
+            à 221     y 89      x 88      . 190     k 75      ’ 192     q 81      g 71      h 72      f 70
+
+  ;; CLEAVE-specific keys
+  ;; source: https://trulyergonomic.com/Truly%20Ergonomic%20-%20Cleave%20-%20Installation%20Guide.pdf
+  rspc 32  ;; right space -> regular space
+  |<- 127  ;; backtab -> F16
+  lspc 128  ;; left space -> F17
+  seclsft 129  ;; secondary left shift -> F18
+  secdel 130  ;; secondary delete -> F19
+  cut 131  ;; cut -> F20
+  copy 132  ;; copy -> F21
+  paste 133  ;; paste -> F22
+  undo 134  ;; undo -> F23
+  seclctrl 135  ;; secondary left control -> F24
+)
+
+(defsrc
+  esc           F1   F2   F3   F4   F5   F6        F7     F8   F9   F10  F11  F12     del
+                                         caps      rmeta
+  |<-       $   dbqt «    »    lpar rpar paste     undo   @    +    -    /    *    =    %
+  tab           b    é    p    o    è    cut       copy   ^    v    d    l    j    z    w
+  seclctrl      a    u    i    e    ,                     c    t    s    r    n    m    ç
+  lshift        à    y    x    .    k    secdel    bspc   ’    q    g    h    f    rshift
+                     ⇞                                                   ↑
+  lctl lalt       ↖    ↘        lspc                       rspc       ←    →    ralt rctl
+                     ⇟               seclsft          enter              ↓
+)

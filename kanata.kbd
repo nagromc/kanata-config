@@ -1,0 +1,70 @@
+(include cleave-bépo-layout.kbd)
+
+(deflayer default
+  _               _    _    _    _    _    _         _      _    _    _    _    _         _
+                                           _         @mqwerty
+  _          _    _    _    _    _    _    _         lrld   _    _    _    _    _    _    _
+  _               _    _    _    _    _    _         _      _    _    _    _    _    _    à
+  esc             _    _    _    _    _                     _    _    _    _    _    _    _
+  _               w    _    _    _    _    bspc      enter  _    _    _    _    _         _
+                       _                                                   _
+  @lcqwerty @aqwerty _   _          @ly1                     @sply2      _   _       _ @rcqwerty
+                       _                 _               ralt              _
+)
+
+(defalias
+  ;; keep original QWERTY layout when using modifiers lctrl, rctrl, lalt, and rmeta
+  lcqwerty (multi lctrl (layer-while-held mod-qwerty))
+  rcqwerty (multi rctrl (layer-while-held mod-qwerty))
+  aqwerty (multi lalt (layer-while-held mod-qwerty))
+  mqwerty (multi rmeta (layer-while-held mod-qwerty))
+  ly1 (layer-while-held layer1)
+  sply2 (tap-hold-press 200 200 rspc (multi (release-key rspc) (layer-while-held layer2)))
+  nm0 (unmod kp0)
+  nm1 (unmod kp1)
+  nm2 (unmod kp2)
+  nm3 (unmod kp3)
+  nm4 (unmod kp4)
+  nm5 (unmod kp5)
+  nm6 (unmod kp6)
+  nm7 (unmod kp7)
+  nm8 (unmod kp8)
+  nm9 (unmod kp9)
+)
+
+(deflayer mod-qwerty
+  _               _    _    _    _    _    _         _      _    _    _    _    _         _
+                                           _         _
+  _          grv  1    2    3    4    5    _         _      6    7    8    9    0    -    =
+  _               q    w    e    r    t    _         _      y    u    i    o    p    [    ]
+  _               a    s    d    f    g                     h    j    k    l    ;    '    \
+  _               z    x    c    v    b    _         _      n    m    ,    .    /         _
+                       _                                                   _
+  _       _          _   _          _                         _          _   _       _    _
+                       _                 _           _                     _
+)
+
+(deflayer layer1
+  •               •    •    •    •    •    •         •      •    •    •    •    •         •
+                                           _         _
+  _          a    b    c    d    e    f    _         _      •    •    •    •    •    •    •
+  •               •    @nm7 @nm8 @nm9 •    _         _      •    •    •    •    •    •    •
+  _               •    @nm4 @nm5 @nm6 •                     •    •    •    •    •    •    •
+  _               •    @nm1 @nm2 @nm3 •    _         _      •    •    •    •    •         _
+                       @nm0                                                •
+  _       _          •   •          _                         _          •   •       _    _
+                       •                 _           _                     •
+)
+
+
+(deflayer layer2
+  •               •    •    •    •    •    •         •      •    •    •    •    •         •
+                                           _         _
+  •          •    •    •    •    •    •    _         _      •    •    •    •    •    •    •
+  •               •    •    •    •    •    _         _      ⇞    ↖    ↑    ↘    •    •    •
+  •               •    •    •    •    •                     ⇟    ←    ↓    →    •    •    •
+  _               •    •    •    •    •    _         _      •    •    •    •    •         _
+                       _                                                   _
+  _       _          _   _          _                         •          _   _       _    _
+                       _                 _           _                     _
+)
