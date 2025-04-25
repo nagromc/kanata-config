@@ -8,7 +8,7 @@
 
 (deflocalkeys-win
   ;; Standard BÉPO layout
-  ;; source: https://kbdlayout.info/kbdfrnb
+  ;; source: https://kbdlayout.info/kbdfrnb/virtualkeys
   $ 222     dbqt 49   « 50      » 51      lpar 52   rpar 53   @ 54      + 55      - 56      / 57      * 48      = 189     % 187
             b 66      é 186     p 80      o 79      è 191     ^ 219     v 86      d 68      l 76      j 74      z 90      w 87
             a 65      u 85      i 73      e 69      , 188     c 67      t 84      s 83      r 82      n 78      m 77      ç 220
