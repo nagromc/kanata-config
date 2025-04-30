@@ -1,0 +1,48 @@
+;; This defines the US QWERTY layout on the Truly Ergonomic CLEAVE keyboard.
+;;
+;; And you need to use the built-in custom layout using the following key combinations:
+;;   - Factory reset the whole keyboard: Fn + Esc + R until the keyboard blinks
+;;   - Change to the custom layout: Fn + Esc + Q
+;;   - Change the secondary left Ctrl to F24: Fn + Esc + P
+
+(deflocalkeys-macos
+  ;; CLEAVE-specific keys
+  ;; source: https://trulyergonomic.com/Truly%20Ergonomic%20-%20Cleave%20-%20Installation%20Guide.pdf
+  rspc 322  ;; right space -> regular space
+  |<- 127  ;; backtab -> F16
+  lspc 128  ;; left space -> F17
+  seclsft 129  ;; secondary left shift -> F18
+  secdel 130  ;; secondary delete -> F19
+  cut 131  ;; cut -> F20
+  copy 132  ;; copy -> F21
+  paste 133  ;; paste -> F22
+  undo 134  ;; undo -> F23
+  seclctrl 135  ;; secondary left control -> F24
+)
+
+(deflocalkeys-win
+  ;; CLEAVE-specific keys
+  ;; source: https://trulyergonomic.com/Truly%20Ergonomic%20-%20Cleave%20-%20Installation%20Guide.pdf
+  rspc 32  ;; right space -> regular space
+  |<- 127  ;; backtab -> F16
+  lspc 128  ;; left space -> F17
+  seclsft 129  ;; secondary left shift -> F18
+  secdel 130  ;; secondary delete -> F19
+  cut 131  ;; cut -> F20
+  copy 132  ;; copy -> F21
+  paste 133  ;; paste -> F22
+  undo 134  ;; undo -> F23
+  seclctrl 135  ;; secondary left control -> F24
+)
+
+(defsrc
+  esc           F1   F2   F3   F4   F5   F6        F7     F8   F9   F10  F11  F12     del
+                                         caps      rmeta
+  |<-      grv  1    2    3    4    5    paste     undo   6    7    8    9    0    -    =
+  tab           q    w    e    r    t    cut       copy   y    u    i    o    p    [    ]
+  seclctrl      a    s    d    f    g                     h    j    k    l    ;    '    \
+  lshift        z    x    c    v    b    secdel    bspc   n    m    ,    .    /    rshift
+                     ⇞                                                   ↑
+  lctl lalt       ↖    ↘        lspc                       rspc       ←    →    ralt rctl
+                     ⇟               seclsft          enter              ↓
+)
