@@ -21,17 +21,6 @@
   
   +lspc (layer-while-held layer1)
   +rspc (tap-hold-press 200 200 rspc (multi (release-key rspc) (layer-while-held layer2)))
-  nm. (unmod kp.)
-  nm0 (unmod kp0)
-  nm1 (unmod kp1)
-  nm2 (unmod kp2)
-  nm3 (unmod kp3)
-  nm4 (unmod kp4)
-  nm5 (unmod kp5)
-  nm6 (unmod kp6)
-  nm7 (unmod kp7)
-  nm8 (unmod kp8)
-  nm9 (unmod kp9)
 )
 
 (deflayer mod-qwerty
@@ -58,6 +47,19 @@
                        •                 _           _                     •
 )
 
+(defalias
+  nm. (unmod kp.)
+  nm0 (unmod kp0)
+  nm1 (unmod kp1)
+  nm2 (unmod kp2)
+  nm3 (unmod kp3)
+  nm4 (unmod kp4)
+  nm5 (unmod kp5)
+  nm6 (unmod kp6)
+  nm7 (unmod kp7)
+  nm8 (unmod kp8)
+  nm9 (unmod kp9)
+)
 
 (deflayer layer2
   •               •    •    •    •    •    •         •      •    •    •    •    •         •
