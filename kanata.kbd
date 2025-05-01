@@ -2,24 +2,25 @@
 
 (deflayer default
   _               _    _    _    _    _    _         _      _    _    _    _    _         _
-                                           _         @mqwerty
+                                           _         @+rmeta
   _          _    _    _    _    _    _    _         lrld   _    _    _    _    _    _    _
   _               _    _    _    _    _    _         _      _    _    _    _    _    _    à
   esc             _    _    _    _    _                     _    _    _    _    _    _    _
   _               w    _    _    _    _    bspc      enter  _    _    _    _    _         _
                        _                                                   _
-  @lcqwerty @aqwerty _   _          @ly1                     @sply2      _   _       _ @rcqwerty
+  @+lctl @+lalt      _   _          @+lspc                   @+rspc      _   _       _ @+rctl
                        _                 _               ralt              _
 )
 
 (defalias
   ;; keep original QWERTY layout when using modifiers lctrl, rctrl, lalt, and rmeta
-  lcqwerty (multi lctrl (layer-while-held mod-qwerty))
-  rcqwerty (multi rctrl (layer-while-held mod-qwerty))
-  aqwerty (multi lalt (layer-while-held mod-qwerty))
-  mqwerty (multi rmeta (layer-while-held mod-qwerty))
-  ly1 (layer-while-held layer1)
-  sply2 (tap-hold-press 200 200 rspc (multi (release-key rspc) (layer-while-held layer2)))
+  +lctl (multi lctrl (layer-while-held mod-qwerty))
+  +rctl (multi rctrl (layer-while-held mod-qwerty))
+  +lalt (multi lalt (layer-while-held mod-qwerty))
+  +rmeta (multi rmeta (layer-while-held mod-qwerty))
+  
+  +lspc (layer-while-held layer1)
+  +rspc (tap-hold-press 200 200 rspc (multi (release-key rspc) (layer-while-held layer2)))
   nm. (unmod kp.)
   nm0 (unmod kp0)
   nm1 (unmod kp1)
