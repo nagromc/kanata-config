@@ -18,8 +18,8 @@
   +rctl (multi rctrl (layer-while-held mod-qwerty))
   +lalt (multi lalt (layer-while-held mod-qwerty))
   +rmeta (multi rmeta (layer-while-held mod-qwerty))
-  
-  +lspc (layer-while-held layer1)
+
+  +lspc (tap-hold 200 200 (tap-dance 200 (XX (layer-switch layer1))) (layer-while-held layer1))
   +rspc (tap-hold-press 200 200 rspc (multi (release-key rspc) (layer-while-held layer2)))
 )
 
@@ -43,11 +43,13 @@
   _               @nm0 @nm4 @nm5 @nm6 •                     •    •    •    •    •    •    •
   _               @nm. @nm1 @nm2 @nm3 •    _         _      •    •    •    •    •         _
                        •                                                   •
-  _       _          •   •          _                         _          •   •       _    _
+  _       _          •   •       @+l1lspc                     _          •   •       _    _
                        •                 _           _                     •
 )
 
 (defalias
+  +l1lspc (layer-switch default)
+
   nm. (unmod kp.)
   nm0 (unmod kp0)
   nm1 (unmod kp1)
