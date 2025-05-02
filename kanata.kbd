@@ -19,7 +19,7 @@
   +lalt (multi lalt (layer-while-held mod-qwerty))
   +rmeta (multi rmeta (layer-while-held mod-qwerty))
 
-  +lspc (tap-hold $tt $ht (tap-dance $tt (XX (layer-switch layer1))) (layer-while-held layer1))
+  +lspc (tap-hold-press $tt $ht (tap-dance $tt (XX (layer-switch layer1))) (layer-while-held layer1))
   +rspc (tap-hold-press $tt $ht rspc (multi (release-key rspc) (layer-while-held layer2)))
 )
 
