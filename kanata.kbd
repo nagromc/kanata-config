@@ -19,8 +19,8 @@
   +lalt (multi lalt (layer-while-held mod-qwerty))
   +rmeta (multi rmeta (layer-while-held mod-qwerty))
 
-  +lspc (tap-hold 200 200 (tap-dance 200 (XX (layer-switch layer1))) (layer-while-held layer1))
-  +rspc (tap-hold-press 200 200 rspc (multi (release-key rspc) (layer-while-held layer2)))
+  +lspc (tap-hold $tt $ht (tap-dance $tt (XX (layer-switch layer1))) (layer-while-held layer1))
+  +rspc (tap-hold-press $tt $ht rspc (multi (release-key rspc) (layer-while-held layer2)))
 )
 
 (deflayer mod-qwerty
@@ -73,4 +73,9 @@
                        _                                                   _
   _       _          _   _          _                         •          _   _       _    _
                        _                 _           _                     _
+)
+
+(defvar
+  tt 100  ;; tap-timeout
+  ht 200  ;; hold-timeout
 )
