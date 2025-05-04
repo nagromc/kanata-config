@@ -95,3 +95,8 @@
   tt 100  ;; tap-timeout
   ht 200  ;; hold-timeout
 )
+
+(defcfg
+  tooltip-layer-changes true
+  tooltip-show-blank true
+)
