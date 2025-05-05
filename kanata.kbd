@@ -99,4 +99,5 @@
 (defcfg
   tooltip-layer-changes true
   tooltip-show-blank true
+  windows-altgr cancel-lctl-press
 )
