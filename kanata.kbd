@@ -12,6 +12,24 @@
                        _                 _               _                 _
 )
 
+(defoverrides
+  ;; swap '«' and AltGr+'«' ('<') characters
+  («) (ralt «)
+  (ralt «) («)
+  (lctrl «) (lctrl «)
+  (rctrl «) (rctrl «)
+  (lshift «) (lshift «)
+  (rshift «) (rshift «)
+
+  ;; swap '»' and AltGr+'»' ('>') characters
+  (») (ralt »)
+  (ralt ») (»)
+  (lctrl ») (lctrl »)
+  (rctrl ») (rctrl »)
+  (lshift ») (lshift »)
+  (rshift ») (rshift »)
+)
+
 (defalias
   ;; keep original QWERTY layout when using modifiers lctrl, rctrl, lalt, and rmeta
   +lctl (multi lctrl (layer-while-held mod-qwerty))
