@@ -28,6 +28,28 @@
   seclctrl 135  ;; secondary left control -> F24
 )
 
+(deflocalkeys-winiov2
+  ;; Standard BÉPO layout
+  ;; source: output of `windows_key_tester_winIOv2.exe` (https://github.com/jtroo/kanata/releases/tag/v0.3.0-keycode-tester)
+  $ 192     dbqt 49   « 50      » 51      lpar 52   rpar 53   @ 54      + 55      - 56      / 57      * 48      = 189     % 187
+            b 81      é 87      p 69      o 82      è 84      ^ 89      v 85      d 73      l 79      j 80      z 219     w 221
+            a 65      u 83      i 68      e 70      , 71      c 72      t 74      s 75      r 76      n 186     m 222     ç 220
+            à 90      y 88      x 67      . 86      k 66      ’ 78      q 77      g 188     h 190     f 191
+
+  ;; CLEAVE-specific keys
+  ;; source: https://trulyergonomic.com/Truly%20Ergonomic%20-%20Cleave%20-%20Installation%20Guide.pdf
+  rspc 32  ;; right space -> regular space
+  |<- 127  ;; backtab -> F16
+  lspc 128  ;; left space -> F17
+  seclsft 129  ;; secondary left shift -> F18
+  secdel 130  ;; secondary delete -> F19
+  cut 131  ;; cut -> F20
+  copy 132  ;; copy -> F21
+  paste 133  ;; paste -> F22
+  undo 134  ;; undo -> F23
+  seclctrl 135  ;; secondary left control -> F24
+)
+
 (defsrc
   esc           F1   F2   F3   F4   F5   F6        F7     F8   F9   F10  F11  F12     del
                                          caps      rmeta
