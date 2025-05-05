@@ -6,10 +6,10 @@
   _          _    _    _    _    _    _    _         lrld   _    _    _    _    _    _    _
   _               _    _    _    _    _    _         _      _    _    _    _    _    _    à
   esc             _    _    _    _    _                     _    _    _    _    _    _    _
-  _               w    _    _    _    _    bspc      enter  _    _    _    _    _         _
+  _               w    _    _    _    _    _         _      _    _    _    _    _         _
                        _                                                   _
   @+lctl @+lalt      _   _          @+lspc                   @+rspc      _   _       _ @+rctl
-                       _                 _               ralt              _
+                       _                 _               _                 _
 )
 
 (defalias
