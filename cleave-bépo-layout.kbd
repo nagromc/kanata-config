@@ -6,6 +6,18 @@
 ;;   - Change to the custom layout: Fn + Esc + Q
 ;;   - Change the secondary left Ctrl to F24: Fn + Esc + P
 
+(defsrc
+  esc           F1   F2   F3   F4   F5   F6        F7     F8   F9   F10  F11  F12     del
+                                         caps      rmeta
+  |<-       $   dbqt «    »    lpar rpar paste     undo   @    +    -    /    *    =    %
+  tab           b    é    p    o    è    cut       copy   ^    v    d    l    j    z    w
+  seclctrl      a    u    i    e    ,                     c    t    s    r    n    m    ç
+  lshift        à    y    x    .    k    secdel    bspc   ’    q    g    h    f    rshift
+                     ⇞                                                   ↑
+  lctl lalt       ↖    ↘        lspc                       rspc       ←    →    ralt rctl
+                     ⇟               seclsft          enter              ↓
+)
+
 (deflocalkeys-win
   ;; Standard BÉPO layout
   ;; source: https://kbdlayout.info/kbdfrnb/virtualkeys
@@ -48,16 +60,4 @@
   paste 133  ;; paste -> F22
   undo 134  ;; undo -> F23
   seclctrl 135  ;; secondary left control -> F24
-)
-
-(defsrc
-  esc           F1   F2   F3   F4   F5   F6        F7     F8   F9   F10  F11  F12     del
-                                         caps      rmeta
-  |<-       $   dbqt «    »    lpar rpar paste     undo   @    +    -    /    *    =    %
-  tab           b    é    p    o    è    cut       copy   ^    v    d    l    j    z    w
-  seclctrl      a    u    i    e    ,                     c    t    s    r    n    m    ç
-  lshift        à    y    x    .    k    secdel    bspc   ’    q    g    h    f    rshift
-                     ⇞                                                   ↑
-  lctl lalt       ↖    ↘        lspc                       rspc       ←    →    ralt rctl
-                     ⇟               seclsft          enter              ↓
 )
