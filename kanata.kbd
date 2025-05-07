@@ -75,10 +75,10 @@
   _          a    b    c    d    e    f    _         _      •    •    •    •    •    •    •
   •               •    @nm7 @nm8 @nm9 •    _         _      •    •    •    •    •    •    •
   _               @nm0 @nm4 @nm5 @nm6 •                     •    •    •    •    •    •    •
-  _               @nm. @nm1 @nm2 @nm3 •    _         _      •    •    •    •    •         _
+  _               @nm. @nm1 @nm2 @nm3 •    bspc      _      •    •    •    •    •         _
                        •                                                   •
   _       _          •   •       @+l1lspc                     _          •   •       _    _
-                       •                 _           _                     •
+                       •                 enter       _                     •
 )
 
 (defalias
