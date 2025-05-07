@@ -4,9 +4,9 @@
   _               _    _    _    _    _    _         _      _    _    _    _    _         _
                                            _         @+rmeta
   _          _    _    _    _    _    _    _         lrld   _    _    _    _    _    _    _
-  _               _    _    _    _    _    _         _      _    _    _    _    _    _    à
+  _               _    _    _    _    _    _         _      _    _    _    _    _    _    _
   esc             _    _    _    _    _                     _    _    _    _    _    _    _
-  _               w    _    _    _    _    _         _      _    _    _    _    _         _
+  _               _    _    _    _    _    _         _      _    _    _    _    _         _
                        _                                                   _
   @+lctl @+lalt      _   _          @+lspc                   @+rspc      _   _       _ @+rctl
                        _                 _               _                 _
@@ -28,6 +28,12 @@
   (rctrl ») (rctrl »)
   (lshift ») (lshift »)
   (rshift ») (rshift »)
+
+  ;; swap 'w' and 'à' characters preserving original AltGr modifiers
+  (w) (à)
+  (ralt w) (ralt w)
+  (à) (w)
+  (ralt à) (ralt à)
 )
 
 (defalias
