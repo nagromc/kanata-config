@@ -9,7 +9,7 @@
   _               _    _    _    _    _    _         _      _    _    _    _    _         _
                        _                                                   _
   @+lctl @+lalt      _   _          @+lspc                   @+rspc      _   _       _ @+rctl
-                       _                 _               _                 _
+                       _                 _           @+enter               _
 )
 
 (defoverrides
@@ -60,6 +60,13 @@
     rspc
     ;; hold action
     (multi (release-key rspc) (layer-while-held layer2))
+  )
+
+  +enter (tap-hold-press $tt $ht
+    ;; tap action
+    enter
+    ;; hold action
+    ralt
   )
 )
 
