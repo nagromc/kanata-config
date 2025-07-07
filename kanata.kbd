@@ -29,11 +29,15 @@
   (lshift ») (lshift »)
   (rshift ») (rshift »)
 
-  ;; swap 'w' and 'à' characters preserving original AltGr modifiers
+  ;; swap 'w' and 'à' characters preserving original Ctrl & AltGr modifiers
   (w) (à)
   (ralt w) (ralt w)
+  (lctrl w) (lctrl w)
+  (rctrl w) (rctrl w)
   (à) (w)
   (ralt à) (ralt à)
+  (lctrl à) (lctrl à)
+  (rctrl à) (rctrl à)
 )
 
 (defalias
