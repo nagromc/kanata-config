@@ -38,6 +38,9 @@
   (ralt à) (ralt à)
   (lctrl à) (lctrl à)
   (rctrl à) (rctrl à)
+
+  ;; remap 'copy' to produce an underscore ('_')
+  (copy) (ralt rspc)
 )
 
 (defalias
