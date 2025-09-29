@@ -94,11 +94,11 @@
 (deflayer layer1
   •               •    •    •    •    •    •         •      •    •    •    •    •         •
                                            _         _
-  _          a    b    c    d    e    f    _         _      a    b    c    d    e    f    •
-  •               •    @nm7 @nm8 @nm9 •    bspc      _      •    @nm7 @nm8 @nm9 •    •    •
-  _               •    @nm4 @nm5 @nm6 •                     •    @nm4 @nm5 @nm6 •    •    •
-  _               @nm0 @nm1 @nm2 @nm3 @nm. enter     _      •    @nm1 @nm2 @nm3 •         _
-                       •                                                   @nm.
+  _          •    *    /    -    +    •    _         _      •    _    _    _    _    •    •
+  •               c    @nm7 @nm8 @nm9 f    bspc      _      c    @nm7 @nm8 @nm9 f    •    •
+  _               b    @nm4 @nm5 @nm6 e                     b    @nm4 @nm5 @nm6 e    •    •
+  _               a    @nm1 @nm2 @nm3 d    enter     _      a    @nm1 @nm2 @nm3 d         _
+                      @nm.                                                @nm.
   _       _          •   •         @nm0                      @nm0        •   •       _    _
                        •               @+l1lspc      _                     •
 )
