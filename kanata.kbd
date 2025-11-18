@@ -6,7 +6,7 @@
   _          _    _    _    _    _    _    ins       lrld   _    _    _    _    _    _    _
   _               _    _    _    _    _    _         _      _    _    _    _    _    _    _
   esc             _    _    _    _    _                     _    _    _    _    _    _    _
-  _               _    _    _    _    _    _         _      _    _    _    _    _         _
+  _               _    _    _    _    _    @+f19     _      _    _    _    _    _         _
                        _                                                   _
   @+lctl @+lalt      _   _            @+lctl                 @+rspc      _   _       _ @+rctl
                        _                 @+seclsft   @+enter               _
@@ -49,6 +49,7 @@
   +rctl (multi rctrl (layer-while-held mod-qwerty))
   +lalt (multi lalt (layer-while-held mod-qwerty))
   +rmeta (multi rmeta (layer-while-held mod-qwerty))
+  +f19 (multi f19 (layer-while-held mod-qwerty))
 
   +seclsft (tap-hold-press $tt $ht
     ;; tap action
